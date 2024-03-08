@@ -13,8 +13,11 @@ module.exports = {
         username: by.name('username'),
         password: by.name('password'),
         loginBtn: '//*[@id="loginPanel"]/form/div[3]/input',
-        welcome: '//*[@id="leftPanel"]/p',
+        //welcome: '//*[@id="leftPanel"]/p',
+        welcome: '//*[@id="rightPanel"]/h1',
         customerlookUp: '//*[@id="rightPanel"]/h1',
+      //  Logininfo: '//*[@id="rightPanel"]/p[2]',
+        Logininfo: '//*[@id="rightPanel"]/h1',
         findLoginBtn: '//*[@id="lookupForm"]/table/tbody/tr[8]/td[2]/input',
         //*[@id="lookupForm"]/table/tbody/tr[8]/td[2]/input
         
@@ -31,7 +34,7 @@ module.exports = {
          loginInfo: '//*[@id="rightPanel"]/p[1]',
                        // findLogin: '//*[@id="lookupForm"]/table/tbody/tr[8]/td[2]/input'
          
-         registerBtn: '//*[@id="loginPanel"]/p[2]/a',      
+         registerLink: '//*[@id="loginPanel"]/p[2]/a',      
          RegFirstN: by.name("customer.firstName"),
          RegLastN: by.name("customer.lastName"),
          RegAddres: by.name("customer.address.street"),
